@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 const UseHotels=()=>{
     const [hotels,setHotels]=useState([]);
     useEffect(()=>{
-       fetch('http://localhost:5000/hotels')
+       fetch('https://shielded-cliffs-29571.herokuapp.com/hotels')
         .then(res=>res.json())
         .then(data => setHotels(data))
     },[])

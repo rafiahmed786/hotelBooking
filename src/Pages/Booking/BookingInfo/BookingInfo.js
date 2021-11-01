@@ -7,7 +7,7 @@ const BookingInfo = ({booking}) => {
   const handleDelete=id=>{
     const proceed = window.confirm('Are you sure, you want to delete?');
     if(proceed){
-      const url = `http://localhost:5000/bookings/${id}`
+      const url = `https://shielded-cliffs-29571.herokuapp.com/bookings/${id}`
     fetch(url,{
       method: 'DELETE'
     })

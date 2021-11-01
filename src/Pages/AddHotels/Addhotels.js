@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 const Addhotels = (props) => {
      const { register, handleSubmit} = useForm();
      const onSubmit = data => {
-        axios.post('http://localhost:5000/hotels', data)
+        axios.post('https://shielded-cliffs-29571.herokuapp.com/hotels', data)
         .then(res=> {
             console.log(res)
         })

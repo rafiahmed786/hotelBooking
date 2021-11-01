@@ -4,7 +4,7 @@ import ExplorePlaces from './ExplorePlaces';
 const ExploreContainer = () => {
     const [places,setPlaces]=useState({});
     useEffect(()=>{
-        fetch('http://localhost:5000/places')
+        fetch('https://shielded-cliffs-29571.herokuapp.com/places')
         .then(res=>res.json())
         .then(data=> setPlaces(data))
     },[])

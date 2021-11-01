@@ -16,7 +16,7 @@ const Booking = () => {
     
      
      useEffect(()=>{
-        const url=`http://localhost:5000/hotels/${id}`
+        const url=`https://shielded-cliffs-29571.herokuapp.com/hotels/${id}`
         fetch(url)
         .then(res=>res.json())
         .then(data => setBooking(data))
@@ -28,7 +28,7 @@ const Booking = () => {
     }
      
          const onSubmit = data =>{
-         axios.post(`http://localhost:5000/bookings`,data)
+         axios.post(`https://shielded-cliffs-29571.herokuapp.com/bookings`,data)
          .then(res=>console.log(res))
          alert('Your Booking Placed Successfully')
          reset();

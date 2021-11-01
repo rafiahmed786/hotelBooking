@@ -9,7 +9,7 @@ const MyBookings = () => {
     // console.log(isLoading)
     const [bookings,setBookings]=useState({});
     useEffect(()=>{
-        const url=`http://localhost:5000/bookings/${user?.email}`
+        const url=`https://shielded-cliffs-29571.herokuapp.com/bookings/${user?.email}`
         fetch(url)
         .then(res=>res.json())
         .then(data => setBookings(data))
