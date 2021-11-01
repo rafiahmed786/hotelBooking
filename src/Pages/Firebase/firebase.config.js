@@ -1,10 +1,10 @@
 const firebaseConfig={
-   apiKey: "AIzaSyDTFeFdkkDNsaJmzywGTSas_rE99ZvYoBo",
-  authDomain: "hotel-booking-9693b.firebaseapp.com",
-  projectId: "hotel-booking-9693b",
-  storageBucket: "hotel-booking-9693b.appspot.com",
-  messagingSenderId: "1008393391008",
-  appId: "1:1008393391008:web:2f048a02b750a39353f2c5"
+apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
+authDomain: process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
+projectId: process.env.REACT_APP_FIREBASE_PROJECTID,
+storageBucket: process.env.REACT_APP_FIREBASE_STORAGEBUCKET,
+messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGINGSENDERID,
+appId: process.env.REACT_APP_FIREBASE_APPID
 
 }
 export default firebaseConfig;
